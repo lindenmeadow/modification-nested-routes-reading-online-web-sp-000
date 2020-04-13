@@ -3866,3 +3866,13 @@ Redirected to http://165.227.16.205:53355/posts/17
 Completed 302 Found in 10ms (ActiveRecord: 3.5ms)
 
 
+Started GET "/posts/17" for 69.4.88.172 at 2020-04-13 18:01:30 +0000
+Cannot render console from 69.4.88.172! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 26ms (Views: 22.4ms | ActiveRecord: 0.2ms)
+
+
